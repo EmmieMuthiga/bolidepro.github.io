@@ -1,23 +1,25 @@
 
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 export function Testimonials() {
   const testimonials = [
     {
       quote: "Mambo KRA helped me understand my tax obligations as a small business owner. Now I file my returns with confidence!",
       author: "James Wanjiku",
       role: "Business Owner, Nairobi",
-      image: "https://randomuser.me/api/portraits/men/32.jpg"
+      image: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?fit=crop&w=300&h=300"
     },
     {
       quote: "The reminders feature ensures I never miss a deadline. This tool has saved me from penalties more than once!",
       author: "Mary Akinyi",
       role: "Freelance Designer, Mombasa",
-      image: "https://randomuser.me/api/portraits/women/44.jpg"
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?fit=crop&w=300&h=300"
     },
     {
       quote: "As someone new to filing taxes, Mambo KRA explained everything in simple terms I could understand.",
       author: "Daniel Otieno",
       role: "Recent Graduate, Kisumu",
-      image: "https://randomuser.me/api/portraits/men/56.jpg"
+      image: "https://images.unsplash.com/photo-1537511446539-48a9a4ade9f6?fit=crop&w=300&h=300"
     }
   ];
 
@@ -48,13 +50,13 @@ export function Testimonials() {
               </div>
               <p className="text-gray-700 mb-6 flex-grow">{testimonial.quote}</p>
               <div className="flex items-center mt-4">
-                <div className="h-10 w-10 rounded-full overflow-hidden mr-3">
-                  <img 
+                <Avatar className="h-10 w-10 mr-3">
+                  <AvatarImage 
                     src={testimonial.image} 
                     alt={testimonial.author} 
-                    className="h-full w-full object-cover"
                   />
-                </div>
+                  <AvatarFallback>{testimonial.author.charAt(0)}</AvatarFallback>
+                </Avatar>
                 <div>
                   <p className="font-medium">{testimonial.author}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.role}</p>
@@ -67,3 +69,4 @@ export function Testimonials() {
     </section>
   );
 }
+
