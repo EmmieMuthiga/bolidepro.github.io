@@ -61,7 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        kenya: {
+          red: '#be0027',
+          green: '#006b3d',
+          black: '#000000',
+          dark: '#1a1a1a',
+          white: '#ffffff'
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
