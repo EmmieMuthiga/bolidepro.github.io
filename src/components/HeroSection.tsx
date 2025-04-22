@@ -7,7 +7,6 @@ export function HeroSection() {
     <section className="relative py-20 md:py-32 overflow-hidden">
       {/* Abstract pattern background */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(#006b3d_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1 space-y-6 text-center md:text-left">
@@ -29,24 +28,15 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-          
-          <div className="flex-1 relative">
-            <div className="relative aspect-square max-w-md mx-auto">
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-kenya-red rounded-full opacity-20"></div>
-              <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-kenya-green rounded-full opacity-20"></div>
-              <div className="bg-white shadow-lg rounded-2xl p-6 border border-gray-100 relative z-10">
-                <div className="w-full aspect-square bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
-                  <div className="text-4xl font-bold text-kenya-green">KRA</div>
-                </div>
-                <div className="space-y-3">
-                  <div className="w-full h-4 bg-gray-100 rounded"></div>
-                  <div className="w-2/3 h-4 bg-gray-100 rounded"></div>
-                  <div className="flex justify-between items-center mt-6">
-                    <div className="w-1/3 h-8 bg-kenya-green rounded"></div>
-                    <ArrowRight className="text-kenya-green" />
-                  </div>
-                </div>
-              </div>
+          {/* Add the robot/assistant illustration */}
+          <div className="flex-1 relative flex justify-center items-center">
+            <div className="relative max-w-[360px] w-full aspect-square flex items-center justify-center">
+              <img
+                src="/lovable-uploads/6fb33564-c7ca-4307-8c78-f245707cf084.png"
+                alt="Mambo KRA Digital Assistant"
+                className="rounded-2xl shadow-lg border-4 border-kenya-green object-cover w-full h-full bg-white"
+                style={{ backgroundColor: "#ffffff" }}
+              />
             </div>
           </div>
         </div>

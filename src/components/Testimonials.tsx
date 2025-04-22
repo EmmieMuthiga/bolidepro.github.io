@@ -1,5 +1,5 @@
 
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export function Testimonials() {
   const testimonials = [
@@ -7,19 +7,19 @@ export function Testimonials() {
       quote: "Mambo KRA helped me understand my tax obligations as a small business owner. Now I file my returns with confidence!",
       author: "James Wanjiku",
       role: "Business Owner, Nairobi",
-      image: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?fit=crop&w=300&h=300"
+      color: "bg-kenya-green text-white"
     },
     {
       quote: "The reminders feature ensures I never miss a deadline. This tool has saved me from penalties more than once!",
       author: "Mary Akinyi",
       role: "Freelance Designer, Mombasa",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?fit=crop&w=300&h=300"
+      color: "bg-kenya-red text-white"
     },
     {
       quote: "As someone new to filing taxes, Mambo KRA explained everything in simple terms I could understand.",
       author: "Daniel Otieno",
       role: "Recent Graduate, Kisumu",
-      image: "https://images.unsplash.com/photo-1537511446539-48a9a4ade9f6?fit=crop&w=300&h=300"
+      color: "bg-[#101522] text-white"
     }
   ];
 
@@ -50,12 +50,10 @@ export function Testimonials() {
               </div>
               <p className="text-gray-700 mb-6 flex-grow">{testimonial.quote}</p>
               <div className="flex items-center mt-4">
-                <Avatar className="h-10 w-10 mr-3">
-                  <AvatarImage 
-                    src={testimonial.image} 
-                    alt={testimonial.author} 
-                  />
-                  <AvatarFallback>{testimonial.author.charAt(0)}</AvatarFallback>
+                <Avatar className={`h-10 w-10 mr-3 ${testimonial.color}`}>
+                  <AvatarFallback className="font-bold text-lg">
+                    {testimonial.author.split(" ").map(word => word.charAt(0)).join("")}
+                  </AvatarFallback>
                 </Avatar>
                 <div>
                   <p className="font-medium">{testimonial.author}</p>
@@ -69,4 +67,3 @@ export function Testimonials() {
     </section>
   );
 }
-
