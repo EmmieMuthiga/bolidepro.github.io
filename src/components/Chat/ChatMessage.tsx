@@ -1,5 +1,5 @@
 
-import { User } from "lucide-react";
+import { User, Bot } from "lucide-react";
 
 interface ChatMessageProps {
   isBot: boolean;
@@ -11,7 +11,7 @@ export function ChatMessage({ isBot, message }: ChatMessageProps) {
     <div className={`flex gap-3 ${isBot ? "" : "flex-row-reverse"}`}>
       <div className={`w-8 h-8 rounded-full flex items-center justify-center ${isBot ? "bg-kenya-green" : "bg-kenya-red"}`}>
         {isBot ? (
-          <bot className="w-5 h-5 text-white" />
+          <Bot className="w-5 h-5 text-white" />
         ) : (
           <User className="w-5 h-5 text-white" />
         )}
