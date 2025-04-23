@@ -69,7 +69,7 @@ export function Footer() {
             &copy; {currentYear} Mambo KRA. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="mailto:productionsbolide@gmail.com" className="text-gray-400 hover:text-white text-sm">Contact our support team</a>
+            <a href="mailto:support@mambokra.co.ke" className="text-gray-400 hover:text-white text-sm">Contact our support team</a>
             <a href="#" className="text-gray-400 hover:text-white text-sm">Terms of Service</a>
             <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
             <a href="#" className="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
