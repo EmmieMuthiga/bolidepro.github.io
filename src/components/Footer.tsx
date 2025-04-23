@@ -1,4 +1,3 @@
-
 import { Facebook, Twitter, Instagram, Mail, Phone } from "lucide-react";
 
 export function Footer() {
@@ -51,14 +50,14 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-kenya-green" />
-                <a href="mailto:hello@mambokra.co.ke" className="text-gray-300 hover:text-white">
-                  hello@mambokra.co.ke
+                <a href="mailto:productionsbolide@gmail.com" className="text-gray-300 hover:text-white">
+                  productionsbolide@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-kenya-green" />
-                <a href="tel:+254712345678" className="text-gray-300 hover:text-white">
-                  +254 712 345 678
+                <a href="tel:+254731424478" className="text-gray-300 hover:text-white">
+                  +254 731 424 478
                 </a>
               </li>
             </ul>
