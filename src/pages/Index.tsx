@@ -5,9 +5,12 @@ import { Features } from "@/components/Features";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
-import { ChatInterface } from "@/components/Chat/ChatInterface";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const Index = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
       <header className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -31,18 +34,23 @@ const Index = () => {
       </header>
 
       <main>
-        <HeroSection />
-        <section className="py-16 bg-secondary/50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">Talk to Our Tax Assistant</h2>
-            <ChatInterface />
-          </div>
-        </section>
+        <HeroSection onTryBot={() => setIsChatOpen(true)} />
         <HowItWorks />
         <Features />
         <Testimonials />
         <FAQ />
       </main>
+
+      <Dialog open={isChatOpen} onOpenChange={setIsChatOpen}>
+        <DialogContent className="max-w-3xl h-[80vh]">
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/z-JzSjET5WwD_-SxyLwRl"
+            width="100%"
+            style={{ height: "100%", minHeight: "700px" }}
+            frameBorder="0"
+          />
+        </DialogContent>
+      </Dialog>
 
       <Footer />
     </div>
