@@ -50,8 +50,8 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-kenya-green" />
-                <a href="mailto:productionsbolide@gmail.com" className="text-gray-300 hover:text-white">
-                  productionsbolide@gmail.com
+                <a href="mailto:emmie@bolidepro.com" className="text-gray-300 hover:text-white">
+                  emmie@bolidepro.com
                 </a>
               </li>
               <li className="flex items-center">
