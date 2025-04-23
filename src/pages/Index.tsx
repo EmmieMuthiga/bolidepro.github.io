@@ -1,9 +1,11 @@
+
 import { HeroSection } from "@/components/HeroSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Features } from "@/components/Features";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
+import { ChatInterface } from "@/components/Chat/ChatInterface";
 
 const Index = () => {
   return (
@@ -30,6 +32,12 @@ const Index = () => {
 
       <main>
         <HeroSection />
+        <section className="py-16 bg-secondary/50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8">Talk to Our Tax Assistant</h2>
+            <ChatInterface />
+          </div>
+        </section>
         <HowItWorks />
         <Features />
         <Testimonials />
