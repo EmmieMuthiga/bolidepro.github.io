@@ -50,8 +50,8 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-kenya-green" />
-                <a href="mailto:emmie@bolidepro.com" className="text-gray-300 hover:text-white">
-                  emmie@bolidepro.com
+                <a href="mailto:productionsbolide@gmail.com" className="text-gray-300 hover:text-white">
+                  productionsbolide@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
@@ -69,6 +69,7 @@ export function Footer() {
             &copy; {currentYear} Mambo KRA. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="mailto:productionsbolide@gmail.com" className="text-gray-400 hover:text-white text-sm">Contact our support team</a>
             <a href="#" className="text-gray-400 hover:text-white text-sm">Terms of Service</a>
             <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
             <a href="#" className="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
