@@ -1,3 +1,4 @@
+
 import { Facebook, Twitter, Instagram, Mail, Phone } from "lucide-react";
 
 export function Footer() {
@@ -72,6 +73,7 @@ export function Footer() {
             <a 
               href="mailto:productionsbolide@gmail.com" 
               className="text-gray-400 hover:text-white text-sm"
+              onClick={() => console.log('Support email clicked: productionsbolide@gmail.com')}
             >
               Contact our support team
             </a>
