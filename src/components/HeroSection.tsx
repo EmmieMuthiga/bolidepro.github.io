@@ -11,11 +11,11 @@ export function HeroSection({ onTryBot }: HeroSectionProps) {
   useEffect(() => {
     // Embed chatbot script
     if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-      window.chatbase = (...arguments: any[]) => {
+      window.chatbase = (...args: any[]) => {
         if (!window.chatbase.q) {
           window.chatbase.q = [];
         }
-        window.chatbase.q.push(arguments);
+        window.chatbase.q.push(args);
       };
       
       window.chatbase = new Proxy(window.chatbase, {
